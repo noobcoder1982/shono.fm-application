@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="concert-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a2512"/>
+      <stop offset="40%" stop-color="#18150c"/>
+      <stop offset="100%" stop-color="#09090c"/>
+    </linearGradient>
+    <radialGradient id="stage-spotlight" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#ffc72c" stop-opacity="0.3"/>
+      <stop offset="60%" stop-color="#ffc72c" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#concert-bg)"/>
+  <rect width="800" height="500" fill="url(#stage-spotlight)"/>
+
+  <!-- Stage light beams -->
+  <polygon points="400,0 200,320 280,320" fill="#ffffff" opacity="0.07"/>
+  <polygon points="400,0 520,320 600,320" fill="#ffffff" opacity="0.07"/>
+  <polygon points="400,0 350,340 450,340" fill="#ffc72c" opacity="0.12"/>
+
+  <!-- Crowd Silhouette with arms and hands up -->
+  <g fill="#0c0c0e">
+    <!-- Base crowd mound -->
+    <path d="M 0 340 Q 200 320 400 330 Q 600 320 800 340 L 800 500 L 0 500 Z"/>
+    
+    <!-- Heads and silhouettes -->
+    <circle cx="80" cy="330" r="28"/>
+    <circle cx="160" cy="315" r="32"/>
+    <circle cx="250" cy="325" r="26"/>
+    <circle cx="340" cy="310" r="30"/>
+    <circle cx="430" cy="320" r="28"/>
+    <circle cx="510" cy="310" r="32"/>
+    <circle cx="600" cy="325" r="27"/>
+    <circle cx="690" cy="315" r="30"/>
+    <circle cx="760" cy="330" r="26"/>
+
+    <!-- Raised hands -->
+    <path d="M 140 310 L 135 220 L 145 210 L 155 220 L 150 310 Z"/>
+    <path d="M 175 310 L 180 230 L 190 225 L 195 235 L 185 310 Z"/>
+    
+    <path d="M 320 300 L 310 190 L 320 180 L 330 190 L 325 300 Z"/>
+    <path d="M 350 300 L 365 210 L 375 205 L 380 215 L 360 300 Z"/>
+
+    <path d="M 480 300 L 470 200 L 485 190 L 495 205 L 485 300 Z"/>
+    <path d="M 525 300 L 540 215 L 555 210 L 560 225 L 535 300 Z"/>
+
+    <path d="M 670 310 L 665 230 L 675 220 L 685 230 L 680 310 Z"/>
+  </g>
+
+  <!-- Placeholder label -->
+  <rect x="30" y="30" width="180" height="26" rx="6" fill="rgba(0,0,0,0.6)" stroke="#383842"/>
+  <text x="120" y="47" fill="#a1a1aa" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="600" text-anchor="middle">community-concert.jpg</text>
+</svg>

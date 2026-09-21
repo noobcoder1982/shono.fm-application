@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shono.fm — Good Music Hits Different</title>
+  <meta name="description" content="shono.fm — The desktop music streaming engine for Windows. Featuring our breakthrough YouTube auto-healing playback engine, zero advertisements, and lightweight audio performance.">
+  <meta name="theme-color" content="#0c0c0d">
+
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="shono.fm — Good Music Hits Different">
+  <meta property="og:description" content="The high-fidelity desktop music streamer built for Windows. Zero ads, pure sound.">
+  <meta property="og:image" content="assets/app-icon.png">
+
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  
+  <!-- Google Fonts: Bebas Neue (Futura ND alternative), Inter, Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Top Utility Bar (Nike Standard 36px)
+       ========================================================================= -->
+  <aside class="utility-bar" aria-label="System status bar">
+    <div class="container utility-inner">
+      <div class="utility-left">
+        <span class="utility-dot"></span>
+        <span>SHONO.FM // DESKTOP AUDIO ENGINE</span>
+        <span>&bull;</span>
+        <span>STABLE RELEASE v1.0.1</span>
+      </div>
+      <div class="utility-right">
+        <a href="https://github.com/noobcoder1982/shono.fm/releases" target="_blank" rel="noopener noreferrer">Release Notes</a>
+        <a href="https://github.com/noobcoder1982/shono.fm" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="#specs">System Specs</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       Primary Navigation Bar
+       ========================================================================= -->
+  <header class="primary-nav" id="navbar">
+    <div class="container nav-layout">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="nav-brand" id="nav-brand">
+        <img src="assets/logo.png" alt="shono.fm logo" class="nav-logo-img">
+        <span class="nav-brand-title">shono<span>.fm</span></span>
+      </a>
+
+      <!-- Center Editorial Navigation -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#showcase" class="nav-link">Workstation</a>
+        <a href="#download" class="nav-link">Download</a>
+        <a href="#story" class="nav-link">About</a>
+        <a href="#updates" class="nav-link">What's New</a>
+        <a href="#community" class="nav-link">Community</a>
+      </nav>
+
+      <!-- Right Action Cluster -->
+      <div class="nav-right-cluster">
+        
+        <!-- Search Pill -->
+        <div class="search-pill-wrapper">
+          <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input type="text" class="search-pill" placeholder="Search tracks, artists..." aria-label="Search catalog">
+        </div>
+
+        <!-- Primary CTA Pill Button -->
+        <a href="https://github.com/noobcoder1982/shono.fm/releases/download/v1.0.1/shono.fm.Setup.1.0.1.exe" class="btn-pill-primary btn-nav-cta download-trigger" id="nav-download-btn">
+          Download
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         Editorial Campaign Hero (96px Towering Display Headline)
+         ========================================================================= -->
+    <section class="hero-editorial" id="hero">
+      <div class="container hero-editorial-grid">
+        
+        <!-- Left Copy & Action Block -->
+        <div class="hero-copy-block">
+          
+          <div class="badge-editorial-tag">
+            <span>OFFICIAL DESKTOP RELEASE // v1.0.1</span>
+          </div>
+
+          <h1 class="hero-campaign-headline">
+            GOOD MUSIC<br>
+            HITS <span class="text-highlight">DIFFERENT.</span>
+          </h1>
+
+          <p class="hero-campaign-subtitle">
+            Stream YouTube's entire music catalog natively on your desktop. Built with an intelligent auto-healing stream engine that circumvents playback restrictions, Discord-style in-app updates, and zero audio advertisement interruptions.
+          </p>
+
+          <div class="hero-cta-cluster">
+            <a href="https://github.com/noobcoder1982/shono.fm/releases/download/v1.0.1/shono.fm.Setup.1.0.1.exe" class="btn-pill-primary download-trigger" id="hero-download-btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
+              </svg>
+              <span>Download for Windows</span>
+            </a>
+
+            <a href="https://github.com/noobcoder1982/shono.fm" target="_blank" rel="noopener noreferrer" class="btn-pill-secondary" id="hero-github-btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>Source on GitHub</span>
+            </a>
+          </div>
+
+          <div class="hero-meta-strip">
+            <span>Windows 10 / 11 (64-bit)</span>
+            <span>&bull;</span>
+            <span>100% Free &bull; MIT License</span>
+            <span>&bull;</span>
+            <a href="https://github.com/noobcoder1982/shono.fm/releases">Other Platforms &rarr;</a>
+          </div>
+
+        </div>
+
+        <!-- Right Photography Stage -->
+        <div class="hero-photography-stage">
+          <div class="hero-image-frame">
+            <img src="assets/hero-listener.jpg" alt="shono.fm editorial campaign photography">
+            <div class="pill-on-image-anchor">
+              <span>EDITION 1.0.1 // FOR REAL PEOPLE</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Editorial Metrics Bar (4-Up Ticker)
+         ========================================================================= -->
+    <section class="metrics-strip">
+      <div class="container">
+        <div class="metrics-grid">
+          
+          <div class="metric-item">
+            <span class="metric-value">0%</span>
+            <span class="metric-label">Audio Ad Interruptions</span>
+          </div>
+
+          <div class="metric-item">
+            <span class="metric-value">118MB</span>
+            <span class="metric-label">Average RAM Consumption</span>
+          </div>
+
+          <div class="metric-item">
+            <span class="metric-value">42MS</span>
+            <span class="metric-label">Auto-Healing Stream Latency</span>
+          </div>
+
+          <div class="metric-item">
+            <span class="metric-value">100%</span>
+            <span class="metric-label">Open Source &bull; No Telemetry</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Features Catalog Grid (4-Up Card System on Soft Cloud)
+         ========================================================================= -->
+    <section class="section-features-catalog" id="features">
+      <div class="container">
+        
+        <div class="section-editorial-header">
+          <div class="section-header-title-block">
+            <span class="section-subtitle-tag">INNOVATION &bull; CORE ARCHITECTURE</span>
+            <h2 class="heading-xl">MORE THAN A PLAYER.</h2>
+          </div>
+          <p class="caption-md">Everything you need. Nothing you don't.</p>
+        </div>
+
+        <div class="features-catalog-grid">
+          
+          <!-- Card 1: Import -->
+          <article class="catalog-card">
+            <div class="catalog-card-stage">
+              <div class="catalog-card-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"/>
+                  <path d="M12 12v9"/>
+                  <path d="m8 17 4 4 4-4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="catalog-card-meta">
+              <div class="catalog-swatch-row">
+                <span class="swatch-dot"></span>
+                <span class="caption-sm">01 / PLAYLIST PIPELINE</span>
+              </div>
+              <h3 class="catalog-title">Universal Import</h3>
+              <p class="catalog-desc">Paste YouTube playlists directly into shono.fm. Sync and curate your audio archive with instantaneous caching.</p>
+            </div>
+          </article>
+
+          <!-- Card 2: Auto-Healing Resolver -->
+          <article class="catalog-card">
+            <div class="catalog-card-stage">
+              <div class="catalog-card-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="M9 12l2 2 4-4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="catalog-card-meta">
+              <div class="catalog-swatch-row">
+                <span class="swatch-dot"></span>
+                <span class="caption-sm">02 / ERROR 150 HEALER</span>
+              </div>
+              <h3 class="catalog-title">Auto-Healing Engine</h3>
+              <p class="catalog-desc">Circumvents YouTube Error 150 & 101 label restrictions automatically. Discovers and caches embeddable stream candidates on the fly.</p>
+            </div>
+          </article>
+
+          <!-- Card 3: 007 Stealth Mode -->
+          <article class="catalog-card">
+            <div class="catalog-card-stage">
+              <div class="catalog-card-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 18h20M4 18c0-3 3-5 8-5s8 2 8 5M6 13l2-7h8l2 7"/>
+                </svg>
+              </div>
+            </div>
+            <div class="catalog-card-meta">
+              <div class="catalog-swatch-row">
+                <span class="swatch-dot"></span>
+                <span class="caption-sm">03 / PERFORMANCE</span>
+              </div>
+              <h3 class="catalog-title">007 Stealth Mode</h3>
+              <p class="catalog-desc">Featherweight native Electron audio loop. Operates at near-zero CPU and under 120MB memory for uninterrupted gaming and work.</p>
+            </div>
+          </article>
+
+          <!-- Card 4: Discord-Style In-App Updates -->
+          <article class="catalog-card">
+            <div class="catalog-card-stage">
+              <div class="catalog-card-icon">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+              </div>
+            </div>
+            <div class="catalog-card-meta">
+              <div class="catalog-swatch-row">
+                <span class="swatch-dot"></span>
+                <span class="caption-sm">04 / GITHUB SYNC</span>
+              </div>
+              <h3 class="catalog-title">1-Click Live Updates</h3>
+              <p class="catalog-desc">Connected directly to GitHub Releases. Notification pill indicates new builds with seamless one-click background installation.</p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Product Workstation Showcase (PDP / Interface View)
+         ========================================================================= -->
+    <section class="section-showcase" id="showcase">
+      <div class="container">
+        
+        <div class="section-editorial-header">
+          <div class="section-header-title-block">
+            <span class="section-subtitle-tag">INTERFACE SPECIFICATION</span>
+            <h2 class="heading-xl">LOOKS GOOD. PLAYS BETTER.</h2>
+          </div>
+          <p class="caption-md">Desktop Audio Workstation // Edition 1.0.1</p>
+        </div>
+
+        <div class="showcase-layout">
+          
+          <!-- Left: High-Res App Interface Display -->
+          <div class="showcase-screen-frame">
+            <img src="assets/app-screenshot.png" alt="shono.fm Desktop Player Interface">
+          </div>
+
+          <!-- Right: Nike-Style PDP Spec Panel -->
+          <aside class="showcase-spec-panel">
+            <div class="spec-header">
+              <span class="spec-category-tag">WINDOWS DESKTOP // AUDIO PIPELINE</span>
+              <h3 class="spec-product-title">shono.fm Desktop v1.0.1</h3>
+              <div class="spec-price-row">
+                <span class="price-main">FREE</span>
+                <span class="badge-tag-free">OPEN SOURCE (MIT)</span>
+              </div>
+            </div>
+
+            <!-- Nike PDP Disclosure Rows -->
+            <div class="pdp-disclosure-list">
+              <div class="pdp-disclosure-row">
+                <span>Audio Engine</span>
+                <span>OPUS 160KBPS / FLAC</span>
+              </div>
+              <div class="pdp-disclosure-row">
+                <span>Ad Blocking</span>
+                <span>100% Native Bypass</span>
+              </div>
+              <div class="pdp-disclosure-row">
+                <span>Memory Footprint</span>
+                <span>~118 MB (0.8% CPU)</span>
+              </div>
+              <div class="pdp-disclosure-row">
+                <span>Auto-Healing</span>
+                <span>Error 150 / 101 Resolver</span>
+              </div>
+              <div class="pdp-disclosure-row">
+                <span>Telemetry Policy</span>
+                <span>Zero Surveillance</span>
+              </div>
+            </div>
+
+            <a href="https://github.com/noobcoder1982/shono.fm/releases/download/v1.0.1/shono.fm.Setup.1.0.1.exe" class="btn-pill-primary download-trigger">
+              Download Installer (.exe)
+            </a>
+          </aside>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Side-by-Side Comparison Matrix
+         ========================================================================= -->
+    <section class="section-comparison" id="comparison">
+      <div class="container">
+        
+        <div class="section-editorial-header">
+          <div class="section-header-title-block">
+            <span class="section-subtitle-tag">BENCHMARK COMPARISON</span>
+            <h2 class="heading-xl">WHY SHONO.FM?</h2>
+          </div>
+          <p class="caption-md">Direct performance evaluation against commercial platforms</p>
+        </div>
+
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Feature Metric</th>
+                <th class="col-highlight">shono.fm Desktop</th>
+                <th>Spotify Free Tier</th>
+                <th>YouTube in Browser</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Audio Advertisements</strong></td>
+                <td class="col-highlight"><span class="pill-metric-green">0% Ads (Clean)</span></td>
+                <td><span class="pill-metric-red">Every 2-3 Songs</span></td>
+                <td><span class="pill-metric-red">Pre/Mid-Roll Ads</span></td>
+              </tr>
+              <tr>
+                <td><strong>Auto-Heals Blocked Tracks</strong></td>
+                <td class="col-highlight"><span class="pill-metric-green">Smart Resolver Included</span></td>
+                <td><span class="caption-md">N/A</span></td>
+                <td><span class="pill-metric-red">Error 150 Blackout</span></td>
+              </tr>
+              <tr>
+                <td><strong>Memory Consumption</strong></td>
+                <td class="col-highlight"><span class="pill-metric-green">~118 MB</span></td>
+                <td><span class="caption-md">~450 - 600 MB</span></td>
+                <td><span class="pill-metric-red">~850 MB - 1.5 GB</span></td>
+              </tr>
+              <tr>
+                <td><strong>Mandatory Login</strong></td>
+                <td class="col-highlight"><span class="pill-metric-green">No Account Needed</span></td>
+                <td><span class="pill-metric-red">Required</span></td>
+                <td><span class="caption-md">Constant Prompts</span></td>
+              </tr>
+              <tr>
+                <td><strong>Codebase Transparency</strong></td>
+                <td class="col-highlight"><span class="pill-metric-green">100% MIT Open Source</span></td>
+                <td><span class="caption-md">Proprietary</span></td>
+                <td><span class="caption-md">Proprietary</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Download Editorial Box (The Action Section)
+         ========================================================================= -->
+    <section class="section-download-editorial" id="download">
+      <div class="container download-editorial-layout">
+        
+        <div class="download-callout-box">
+          <span class="section-subtitle-tag">DIRECT BINARY RELEASE // GITHUB HOSTED</span>
+
+          <h2 class="download-headline">
+            GET SHONO.FM.<br>
+            FREE. FAST. ALL YOURS.
+          </h2>
+
+          <p class="body-md">
+            The complete high-fidelity desktop experience. Zero cost, no credit card, no account required. Download the standalone Windows installer and start streaming immediately.
+          </p>
+
+          <div class="download-btn-row">
+            <a href="https://github.com/noobcoder1982/shono.fm/releases/download/v1.0.1/shono.fm.Setup.1.0.1.exe" class="btn-pill-primary download-trigger" id="download-box-btn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
+              </svg>
+              <span>Download shono.fm.Setup.1.0.1.exe</span>
+            </a>
+
+            <a href="https://github.com/noobcoder1982/shono.fm/releases" target="_blank" rel="noopener noreferrer" class="btn-pill-secondary">
+              View Changelog
+            </a>
+          </div>
+
+          <!-- Direct URL Checksum Copy Box -->
+          <div class="checksum-pill-box" id="specs">
+            <span class="checksum-text" id="checksum-url">https://github.com/noobcoder1982/shono.fm/releases/download/v1.0.1/shono.fm.Setup.1.0.1.exe</span>
+            <button class="btn-copy-checksum" id="btn-copy-url">
+              Copy Link
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Right Setup Photography -->
+        <div class="download-photo-container">
+          <div class="download-photo-frame">
+            <img src="assets/download-setup.jpg" alt="shono.fm desktop setup on workstation">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Editorial Story / About Section
+         ========================================================================= -->
+    <section class="section-editorial-story" id="story">
+      <div class="container story-editorial-layout">
+        
+        <div class="story-copy-panel">
+          <span class="section-subtitle-tag">OUR PHILOSOPHY</span>
+          <h2 class="heading-xl">BUILT FOR REAL PEOPLE.</h2>
+          <p class="story-copy-text">
+            Commercial streaming applications have evolved into cluttered advertising ecosystems that commodify your listening behavior. shono.fm was built from scratch around a simpler, cleaner conviction:
+          </p>
+          <p class="story-copy-text">
+            Your music should play instantly, without video ads, without memory throttling, and without corporate telemetry. Same music. A more human you.
+          </p>
+          <div>
+            <a href="https://github.com/noobcoder1982/shono.fm" target="_blank" rel="noopener noreferrer" class="btn-pill-outline">
+              Read Our Story on GitHub &rarr;
+            </a>
+          </div>
+        </div>
+
+        <div class="story-photo-frame">
+          <img src="assets/about-person.jpg" alt="Listener immersed in music">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         What's New? (Changelog Feed)
+         ========================================================================= -->
+    <section class="section-updates-feed" id="updates">
+      <div class="container">
+        
+        <div class="section-editorial-header">
+          <div class="section-header-title-block">
+            <span class="section-subtitle-tag">RELEASE LOG &bull; GITHUB COMMITS</span>
+            <h2 class="heading-xl">WHAT'S NEW?</h2>
+          </div>
+          <a href="https://github.com/noobcoder1982/shono.fm/releases" target="_blank" rel="noopener noreferrer" class="btn-pill-secondary" style="height: 38px; padding: 6px 18px; font-size: 0.8125rem;">
+            All Releases &rarr;
+          </a>
+        </div>
+
+        <div class="updates-grid">
+          
+          <a href="https://github.com/noobcoder1982/shono.fm/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer" class="update-entry-card">
+            <div class="update-thumb-wrapper">
+              <img src="assets/update-thumb-1.jpg" alt="v1.0.0 First Release">
+            </div>
+            <div class="update-content-box">
+              <span class="update-date-badge">SEP 15, 2025 // v1.0.0</span>
+              <h3 class="update-card-title">Initial Stable Release</h3>
+              <p class="update-card-desc">A cleaner, faster, more human music experience with YouTube stream extraction and auto-healing engine.</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/noobcoder1982/shono.fm/releases" target="_blank" rel="noopener noreferrer" class="update-entry-card">
+            <div class="update-thumb-wrapper">
+              <img src="assets/update-thumb-2.jpg" alt="007 Mode">
+            </div>
+            <div class="update-content-box">
+              <span class="update-date-badge">SEP 10, 2025 // ENGINE</span>
+              <h3 class="update-card-title">Introducing 007 Mode</h3>
+              <p class="update-card-desc">Ultra-stealth performance mode that minimizes background resource utilization below 1% CPU.</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/noobcoder1982/shono.fm/releases" target="_blank" rel="noopener noreferrer" class="update-entry-card">
+            <div class="update-thumb-wrapper">
+              <img src="assets/update-thumb-3.jpg" alt="Themes & Customization">
+            </div>
+            <div class="update-content-box">
+              <span class="update-date-badge">AUG 28, 2025 // INTERFACE</span>
+              <h3 class="update-card-title">Themes & Customization</h3>
+              <p class="update-card-desc">Personalized high-contrast dark themes, tactile visualizer modes, and custom hotkey bindings.</p>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Community Section
+         ========================================================================= -->
+    <section class="section-community-editorial" id="community">
+      <div class="container">
+        
+        <div class="section-editorial-header">
+          <div class="section-header-title-block">
+            <span class="section-subtitle-tag">COMMUNITY & COLLABORATION</span>
+            <h2 class="heading-xl">PEOPLE LIKE YOU.</h2>
+          </div>
+          <p class="caption-md">Music hits different together.</p>
+        </div>
+
+        <div class="community-stage-grid">
+          
+          <a href="https://discord.gg" target="_blank" rel="noopener noreferrer" class="community-card">
+            <div class="comm-icon-box">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.893.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+              </svg>
+            </div>
+            <div class="comm-text-col">
+              <span class="comm-title">Discord Community</span>
+              <span class="comm-sub">Chat with developers & audiophiles</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/noobcoder1982/shono.fm" target="_blank" rel="noopener noreferrer" class="community-card">
+            <div class="comm-icon-box">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </div>
+            <div class="comm-text-col">
+              <span class="comm-title">GitHub Repository</span>
+              <span class="comm-sub">Star the project & contribute code</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/noobcoder1982/shono.fm/issues" target="_blank" rel="noopener noreferrer" class="community-card">
+            <div class="comm-icon-box">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <div class="comm-text-col">
+              <span class="comm-title">Issue Tracker</span>
+              <span class="comm-sub">Report bugs & request new features</span>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       4-Column Editorial Footer (Nike Standard)
+       ========================================================================= -->
+  <footer class="footer-editorial">
+    <div class="container">
+      
+      <div class="footer-columns-grid">
+        
+        <div class="footer-col">
+          <span class="footer-col-header">RESOURCES</span>
+          <ul class="footer-link-list">
+            <li><a href="https://github.com/noobcoder1982/shono.fm/releases/download/v1.0.1/shono.fm.Setup.1.0.1.exe" class="download-trigger">Download for Windows</a></li>
+            <li><a href="https://github.com/noobcoder1982/shono.fm/releases">Release Notes</a></li>
+            <li><a href="#specs">System Requirements</a></li>
+            <li><a href="#features">Architecture Overview</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-header">HELP & SUPPORT</span>
+          <ul class="footer-link-list">
+            <li><a href="https://github.com/noobcoder1982/shono.fm/issues">GitHub Issues</a></li>
+            <li><a href="https://github.com/noobcoder1982/shono.fm/discussions">Community Forum</a></li>
+            <li><a href="#download">SmartScreen Notice</a></li>
+            <li><a href="404.html">404 Error Preview</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-header">COMPANY / PROJECT</span>
+          <ul class="footer-link-list">
+            <li><a href="#story">About shono.fm</a></li>
+            <li><a href="https://github.com/noobcoder1982">Creator @noobcoder1982</a></li>
+            <li><a href="https://github.com/noobcoder1982/shono.fm/blob/main/LICENSE">MIT License</a></li>
+            <li><a href="https://github.com/noobcoder1982/shono.fm">Open Source Repository</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-header">TECHNOLOGY</span>
+          <ul class="footer-link-list">
+            <li><a href="#features">Auto-Healing Stream Resolver</a></li>
+            <li><a href="#features">Googlevideo Header Optimizer</a></li>
+            <li><a href="#features">Electron Desktop Engine</a></li>
+            <li><a href="#features">Discord-Style Live Updater</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-row">
+        <span>&copy; 2026 SHONO.FM &bull; Distributed under the MIT License.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="https://github.com/noobcoder1982/shono.fm">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Download Confirmation Modal
+       ========================================================================= -->
+  <div class="download-modal" id="download-modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <button class="modal-close" id="modal-close" aria-label="Close dialog">&times;</button>
+      
+      <div class="modal-header">
+        <div class="modal-brand-badge">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/>
+          </svg>
+        </div>
+        <h3 class="modal-title">DOWNLOAD STARTED.</h3>
+        <p class="modal-desc">
+          Your installer <code>shono.fm.Setup.1.0.1.exe</code> is downloading directly from GitHub Releases.
+        </p>
+      </div>
+
+      <div class="modal-guide">
+        <div class="guide-step">
+          <span class="step-pill-num">1</span>
+          <div class="step-text">
+            <strong>Run installer</strong>
+            <span>Locate the file in your browser downloads or Downloads folder.</span>
+          </div>
+        </div>
+        <div class="guide-step">
+          <span class="step-pill-num">2</span>
+          <div class="step-text">
+            <strong>Windows SmartScreen guidance</strong>
+            <span>If prompted, click <em>More info</em> &rarr; <em>Run anyway</em>.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-fallback-row">
+        <span>Download didn't begin?</span>
+        <a href="https://github.com/noobcoder1982/shono.fm/releases/download/v1.0.1/shono.fm.Setup.1.0.1.exe">Click here to retry</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

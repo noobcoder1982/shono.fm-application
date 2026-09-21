@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 260" width="100%" height="100%">
+  <rect width="800" height="260" fill="#0f0f13"/>
+  
+  <!-- Filmstrip perforations at top and bottom -->
+  <g fill="#272730">
+    <rect x="20" y="8" width="14" height="20" rx="3"/>
+    <rect x="60" y="8" width="14" height="20" rx="3"/>
+    <rect x="100" y="8" width="14" height="20" rx="3"/>
+    <rect x="140" y="8" width="14" height="20" rx="3"/>
+    <rect x="180" y="8" width="14" height="20" rx="3"/>
+    <rect x="220" y="8" width="14" height="20" rx="3"/>
+    <rect x="260" y="8" width="14" height="20" rx="3"/>
+    <rect x="300" y="8" width="14" height="20" rx="3"/>
+    <rect x="340" y="8" width="14" height="20" rx="3"/>
+    <rect x="380" y="8" width="14" height="20" rx="3"/>
+    <rect x="420" y="8" width="14" height="20" rx="3"/>
+    <rect x="460" y="8" width="14" height="20" rx="3"/>
+    <rect x="500" y="8" width="14" height="20" rx="3"/>
+    <rect x="540" y="8" width="14" height="20" rx="3"/>
+    <rect x="580" y="8" width="14" height="20" rx="3"/>
+    <rect x="620" y="8" width="14" height="20" rx="3"/>
+    <rect x="660" y="8" width="14" height="20" rx="3"/>
+    <rect x="700" y="8" width="14" height="20" rx="3"/>
+    <rect x="740" y="8" width="14" height="20" rx="3"/>
+
+    <rect x="20" y="232" width="14" height="20" rx="3"/>
+    <rect x="60" y="232" width="14" height="20" rx="3"/>
+    <rect x="100" y="232" width="14" height="20" rx="3"/>
+    <rect x="140" y="232" width="14" height="20" rx="3"/>
+    <rect x="180" y="232" width="14" height="20" rx="3"/>
+    <rect x="220" y="232" width="14" height="20" rx="3"/>
+    <rect x="260" y="232" width="14" height="20" rx="3"/>
+    <rect x="300" y="232" width="14" height="20" rx="3"/>
+    <rect x="340" y="232" width="14" height="20" rx="3"/>
+    <rect x="380" y="232" width="14" height="20" rx="3"/>
+    <rect x="420" y="232" width="14" height="20" rx="3"/>
+    <rect x="460" y="232" width="14" height="20" rx="3"/>
+    <rect x="500" y="232" width="14" height="20" rx="3"/>
+    <rect x="540" y="232" width="14" height="20" rx="3"/>
+    <rect x="580" y="232" width="14" height="20" rx="3"/>
+    <rect x="620" y="232" width="14" height="20" rx="3"/>
+    <rect x="660" y="232" width="14" height="20" rx="3"/>
+    <rect x="700" y="232" width="14" height="20" rx="3"/>
+    <rect x="740" y="232" width="14" height="20" rx="3"/>
+  </g>
+
+  <!-- Film frames -->
+  <rect x="40" y="38" width="220" height="184" fill="#181820" rx="4"/>
+  <circle cx="150" cy="130" r="45" fill="#2d2d38"/>
+
+  <rect x="290" y="38" width="220" height="184" fill="#181820" rx="4"/>
+  <circle cx="400" cy="130" r="45" fill="#2d2d38"/>
+
+  <rect x="540" y="38" width="220" height="184" fill="#181820" rx="4"/>
+  <circle cx="650" cy="130" r="45" fill="#2d2d38"/>
+
+  <text x="400" y="135" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="2">features-strip.jpg</text>
+</svg>

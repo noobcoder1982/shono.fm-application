@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="vinyl-grooves" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2a2a30"/>
+      <stop offset="25%" stop-color="#121215"/>
+      <stop offset="27%" stop-color="#26262c"/>
+      <stop offset="50%" stop-color="#0e0e11"/>
+      <stop offset="52%" stop-color="#202026"/>
+      <stop offset="75%" stop-color="#0b0b0e"/>
+      <stop offset="77%" stop-color="#1c1c22"/>
+      <stop offset="100%" stop-color="#050507"/>
+    </radialGradient>
+    <linearGradient id="sheen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.15"/>
+      <stop offset="45%" stop-color="white" stop-opacity="0.0"/>
+      <stop offset="55%" stop-color="white" stop-opacity="0.0"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Vinyl Disc -->
+  <circle cx="200" cy="200" r="195" fill="url(#vinyl-grooves)" stroke="#222228" stroke-width="2"/>
+
+  <!-- Light reflection cone sheen -->
+  <circle cx="200" cy="200" r="195" fill="url(#sheen)"/>
+
+  <!-- Center Label (Yellow) -->
+  <circle cx="200" cy="200" r="65" fill="#ffc72c"/>
+  <circle cx="200" cy="200" r="60" fill="none" stroke="#000000" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="200" y="195" font-family="'Syne', 'Inter', sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#000000">shono<tspan fill="#ffffff">.</tspan>fm</text>
+  <text x="200" y="212" font-family="'Space Grotesk', sans-serif" font-size="7" font-weight="700" letter-spacing="1" text-anchor="middle" fill="#000000">33⅓ RPM • STEREO</text>
+
+  <!-- Spindle Hole -->
+  <circle cx="200" cy="200" r="10" fill="#070709"/>
+</svg>

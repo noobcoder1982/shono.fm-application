@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="100%" height="100%">
+  <rect width="300" height="200" fill="#0f0f14"/>
+  <!-- 007 Spy Fedora / Hat Silhouette -->
+  <path d="M 90 115 C 100 110, 140 105, 150 85 C 160 105, 200 110, 210 115 C 230 118, 240 120, 240 125 C 240 130, 60 130, 60 125 C 60 120, 70 118, 90 115 Z" fill="#ffc72c"/>
+  <rect x="100" y="112" width="100" height="7" fill="#18181b"/>
+  <text x="150" y="175" fill="#a1a1aa" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="600" text-anchor="middle">update-thumb-2.jpg</text>
+</svg>

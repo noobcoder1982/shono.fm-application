@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="desk" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#18181c"/>
+      <stop offset="100%" stop-color="#0a0a0c"/>
+    </linearGradient>
+    <linearGradient id="screen-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a200e"/>
+      <stop offset="100%" stop-color="#0f0f12"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#desk)"/>
+
+  <!-- Ambient glow behind laptop -->
+  <circle cx="450" cy="260" r="220" fill="#ffc72c" opacity="0.08"/>
+
+  <!-- Laptop Screen Frame -->
+  <g transform="translate(260, 100)">
+    <!-- Lid / Bezel -->
+    <rect x="0" y="0" width="420" height="270" rx="14" fill="#1b1b22" stroke="#32323e" stroke-width="2"/>
+    <!-- Screen Display -->
+    <rect x="15" y="15" width="390" height="240" rx="6" fill="url(#screen-glow)"/>
+    
+    <!-- Shono App on screen -->
+    <text x="210" y="125" fill="#ffffff" font-family="'Syne', sans-serif" font-size="32" font-weight="800" text-anchor="middle">sh<tspan fill="#ffc72c">.</tspan></text>
+    <text x="210" y="155" fill="#a1a1aa" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" letter-spacing="2" text-anchor="middle">MUSIC FOR A MORE HUMAN YOU</text>
+    
+    <!-- Wave bars on screen -->
+    <g transform="translate(145, 175)" fill="#ffc72c">
+      <rect x="0" y="5" width="4" height="15" rx="2"/>
+      <rect x="10" y="0" width="4" height="25" rx="2"/>
+      <rect x="20" y="8" width="4" height="17" rx="2"/>
+      <rect x="30" y="2" width="4" height="23" rx="2"/>
+      <rect x="40" y="10" width="4" height="15" rx="2"/>
+      <rect x="50" y="4" width="4" height="21" rx="2"/>
+      <rect x="60" y="0" width="4" height="25" rx="2"/>
+      <rect x="70" y="7" width="4" height="18" rx="2"/>
+      <rect x="80" y="2" width="4" height="23" rx="2"/>
+      <rect x="90" y="9" width="4" height="16" rx="2"/>
+      <rect x="100" y="3" width="4" height="22" rx="2"/>
+      <rect x="110" y="12" width="4" height="13" rx="2"/>
+      <rect x="120" y="5" width="4" height="20" rx="2"/>
+    </g>
+
+    <!-- Laptop Base / Keyboard deck (perspective) -->
+    <polygon points="-40,270 460,270 485,340 -65,340" fill="#121216" stroke="#2a2a34" stroke-width="1.5"/>
+    <rect x="160" y="280" width="100" height="40" rx="6" fill="#1e1e26"/>
+  </g>
+
+  <!-- Headphones sitting on the desk next to laptop -->
+  <g transform="translate(130, 360)">
+    <ellipse cx="60" cy="70" rx="45" ry="60" fill="#000000" stroke="#ffc72c" stroke-width="6"/>
+    <ellipse cx="60" cy="70" rx="30" ry="42" fill="#202026"/>
+    <ellipse cx="60" cy="70" rx="14" ry="20" fill="#ffc72c"/>
+    <path d="M 60 10 C 130 10, 150 140, 110 170" fill="none" stroke="#3f3f46" stroke-width="14" stroke-linecap="round"/>
+  </g>
+
+  <!-- Placeholder label -->
+  <rect x="30" y="30" width="160" height="26" rx="6" fill="rgba(0,0,0,0.6)" stroke="#383842"/>
+  <text x="110" y="47" fill="#a1a1aa" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="600" text-anchor="middle">download-setup.jpg</text>
+</svg>

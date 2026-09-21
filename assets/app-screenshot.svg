@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="100%" height="100%">
+  <defs>
+    <linearGradient id="app-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141416"/>
+      <stop offset="100%" stop-color="#0a0a0c"/>
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#242428"/>
+      <stop offset="100%" stop-color="#18181c"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="15" stdDeviation="25" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- App Window Frame -->
+  <rect x="10" y="10" width="1180" height="760" rx="16" fill="url(#app-bg)" stroke="#2d2d34" stroke-width="1.5" filter="url(#shadow)"/>
+
+  <!-- Window Header / Controls -->
+  <circle cx="42" cy="38" r="6" fill="#ff5f56"/>
+  <circle cx="62" cy="38" r="6" fill="#ffbd2e"/>
+  <circle cx="82" cy="38" r="6" fill="#27c93f"/>
+
+  <!-- Search Bar in Top Bar -->
+  <rect x="250" y="24" width="340" height="30" rx="15" fill="#202026" stroke="#2e2e38" stroke-width="1"/>
+  <circle cx="270" cy="39" r="5" fill="none" stroke="#71717a" stroke-width="1.5"/>
+  <line x1="274" y1="43" x2="278" y2="47" stroke="#71717a" stroke-width="1.5"/>
+  <text x="290" y="44" fill="#71717a" font-family="'Inter', sans-serif" font-size="12">Search songs, albums, artists...</text>
+
+  <!-- Left Sidebar -->
+  <g transform="translate(24, 70)">
+    <!-- Brand Logo -->
+    <text x="16" y="30" fill="#ffffff" font-family="'Syne', 'Inter', sans-serif" font-size="24" font-weight="800">sh<tspan fill="#ffc72c">.</tspan></text>
+    
+    <!-- Sidebar Menu Items -->
+    <g transform="translate(10, 60)" font-family="'Inter', sans-serif" font-size="13" font-weight="600">
+      <!-- Active Item: Home -->
+      <rect x="0" y="0" width="170" height="36" rx="8" fill="#272730"/>
+      <circle cx="22" cy="18" r="3" fill="#ffc72c"/>
+      <text x="36" y="23" fill="#ffffff">Home</text>
+
+      <g fill="#8e8e9c">
+        <text x="36" y="65">Search</text>
+        <text x="36" y="105">Library</text>
+        <text x="36" y="145">Playlists</text>
+        <text x="36" y="185">Favorites</text>
+        <text x="36" y="225">Artists</text>
+        <text x="36" y="265">Settings</text>
+      </g>
+    </g>
+  </g>
+
+  <line x1="220" y1="70" x2="220" y2="690" stroke="#1f1f26" stroke-width="1"/>
+
+  <!-- Main Content Area -->
+  <g transform="translate(250, 80)">
+    <!-- Hero Title in App -->
+    <text x="0" y="45" fill="#a1a1aa" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700" letter-spacing="2">GOOD</text>
+    <text x="0" y="85" fill="#ffffff" font-family="'Syne', 'Inter', sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">Music Never Dies.</text>
+
+    <!-- Filter Pills -->
+    <g transform="translate(0, 115)" font-family="'Inter', sans-serif" font-size="12" font-weight="600">
+      <rect x="0" y="0" width="60" height="28" rx="14" fill="#ffc72c"/>
+      <text x="17" y="18" fill="#000000">Songs</text>
+
+      <rect x="70" y="0" width="70" height="28" rx="14" fill="#202026"/>
+      <text x="85" y="18" fill="#a1a1aa">Playlists</text>
+
+      <rect x="150" y="0" width="68" height="28" rx="14" fill="#202026"/>
+      <text x="167" y="18" fill="#a1a1aa">Albums</text>
+
+      <rect x="228" y="0" width="60" height="28" rx="14" fill="#202026"/>
+      <text x="244" y="18" fill="#a1a1aa">Artists</text>
+    </g>
+
+    <!-- Recently Played Header -->
+    <text x="0" y="185" fill="#ffffff" font-family="'Syne', sans-serif" font-size="16" font-weight="700">Recently Played</text>
+
+    <!-- Track/Album Cards Row -->
+    <g transform="translate(0, 205)">
+      <!-- Card 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="180" height="220" rx="12" fill="url(#card-grad)" stroke="#26262e" stroke-width="1"/>
+        <rect x="15" y="15" width="150" height="130" rx="8" fill="#383842"/>
+        <!-- Album artwork preview -->
+        <circle cx="90" cy="80" r="35" fill="#ffc72c" opacity="0.85"/>
+        <path d="M82 68 L104 80 L82 92 Z" fill="#000000"/>
+        <text x="15" y="170" fill="#ffffff" font-family="'Inter', sans-serif" font-size="13" font-weight="700">Midnight City</text>
+        <text x="15" y="190" fill="#71717a" font-family="'Inter', sans-serif" font-size="11">M83</text>
+      </g>
+
+      <!-- Card 2 -->
+      <g transform="translate(200, 0)">
+        <rect width="180" height="220" rx="12" fill="url(#card-grad)" stroke="#26262e" stroke-width="1"/>
+        <rect x="15" y="15" width="150" height="130" rx="8" fill="#2d3748"/>
+        <circle cx="290" cy="80" r="28" fill="#e2e8f0" opacity="0.2"/>
+        <text x="15" y="170" fill="#ffffff" font-family="'Inter', sans-serif" font-size="13" font-weight="700">After Hours</text>
+        <text x="15" y="190" fill="#71717a" font-family="'Inter', sans-serif" font-size="11">The Weeknd</text>
+      </g>
+
+      <!-- Card 3 -->
+      <g transform="translate(400, 0)">
+        <rect width="180" height="220" rx="12" fill="url(#card-grad)" stroke="#26262e" stroke-width="1"/>
+        <rect x="15" y="15" width="150" height="130" rx="8" fill="#4a3b32"/>
+        <text x="15" y="170" fill="#ffffff" font-family="'Inter', sans-serif" font-size="13" font-weight="700">Solace</text>
+        <text x="15" y="190" fill="#71717a" font-family="'Inter', sans-serif" font-size="11">RÜFÜS DU SOL</text>
+      </g>
+
+      <!-- Card 4 -->
+      <g transform="translate(600, 0)">
+        <rect width="180" height="220" rx="12" fill="url(#card-grad)" stroke="#26262e" stroke-width="1"/>
+        <rect x="15" y="15" width="150" height="130" rx="8" fill="#2a4365"/>
+        <text x="15" y="170" fill="#ffffff" font-family="'Inter', sans-serif" font-size="13" font-weight="700">Chronixx Live</text>
+        <text x="15" y="190" fill="#71717a" font-family="'Inter', sans-serif" font-size="11">Roots &amp; Soul</text>
+      </g>
+
+      <!-- Card 5 (Peeking) -->
+      <g transform="translate(800, 0)">
+        <rect width="100" height="220" rx="12" fill="url(#card-grad)" stroke="#26262e" stroke-width="1"/>
+        <rect x="15" y="15" width="70" height="130" rx="8" fill="#3c366b"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Player Bar -->
+  <rect x="10" y="685" width="1180" height="85" fill="#17171d" stroke="#2a2a34" stroke-width="1"/>
+
+  <!-- Left: Currently Playing Album Art & Info -->
+  <g transform="translate(35, 702)">
+    <rect width="50" height="50" rx="8" fill="#ffc72c"/>
+    <circle cx="25" cy="25" r="14" fill="#18181b"/>
+    <text x="65" y="24" fill="#ffffff" font-family="'Inter', sans-serif" font-size="14" font-weight="700">Falling Apart</text>
+    <text x="65" y="42" fill="#8e8e9c" font-family="'Inter', sans-serif" font-size="12">Post Malone • Austin</text>
+  </g>
+
+  <!-- Center: Playback Controls & Scrubber -->
+  <g transform="translate(540, 712)">
+    <!-- Prev -->
+    <path d="M-40 10 L-50 18 L-40 26 Z M-50 10 L-52 10 L-52 26 L-50 26 Z" fill="#ffffff"/>
+    
+    <!-- Play/Pause Big Yellow Button -->
+    <circle cx="0" cy="18" r="20" fill="#ffc72c"/>
+    <rect x="-6" y="11" width="4" height="14" rx="2" fill="#000000"/>
+    <rect x="2" y="11" width="4" height="14" rx="2" fill="#000000"/>
+
+    <!-- Next -->
+    <path d="M40 10 L50 18 L40 26 Z M50 10 L52 10 L52 26 L50 26 Z" fill="#ffffff"/>
+
+    <!-- Scrubber -->
+    <g transform="translate(-180, 36)">
+      <text x="-40" y="6" fill="#71717a" font-family="'Space Grotesk', monospace" font-size="10">01:42</text>
+      <rect x="0" y="0" width="360" height="4" rx="2" fill="#2d2d38"/>
+      <rect x="0" y="0" width="150" height="4" rx="2" fill="#ffc72c"/>
+      <circle cx="150" cy="2" r="6" fill="#ffffff"/>
+      <text x="375" y="6" fill="#71717a" font-family="'Space Grotesk', monospace" font-size="10">03:38</text>
+    </g>
+  </g>
+
+  <!-- Right: Volume & Codec -->
+  <g transform="translate(1040, 725)">
+    <circle cx="0" cy="5" r="4" fill="#22c55e"/>
+    <text x="12" y="9" fill="#22c55e" font-family="'Space Grotesk', monospace" font-size="11" font-weight="700">FLAC 24-bit</text>
+  </g>
+
+  <!-- Watermark badge for placeholder -->
+  <rect x="990" y="30" width="170" height="24" rx="6" fill="rgba(0,0,0,0.5)" stroke="#383842"/>
+  <text x="1075" y="46" fill="#a1a1aa" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="600" text-anchor="middle">app-screenshot.png</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="about-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#222228"/>
+      <stop offset="60%" stop-color="#121215"/>
+      <stop offset="100%" stop-color="#08080a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="700" height="800" fill="url(#about-bg)"/>
+
+  <!-- Window frame lines in background -->
+  <line x1="100" y1="0" x2="100" y2="800" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+  <line x1="350" y1="0" x2="350" y2="800" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+  <line x1="600" y1="0" x2="600" y2="800" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+  <line x1="0" y1="300" x2="700" y2="300" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+
+  <!-- Back of Head / Hoodie Silhouette -->
+  <g fill="#18181c">
+    <!-- Shoulders -->
+    <path d="M120 800 C 180 560, 260 520, 370 520 C 480 520, 560 560, 620 800 Z" fill="#141418"/>
+    <!-- Hoodie folds -->
+    <path d="M 280 520 Q 370 580 460 520" fill="none" stroke="#25252e" stroke-width="8"/>
+    <!-- Head / Back of neck -->
+    <ellipse cx="370" cy="380" rx="95" ry="115" fill="#2d2d36"/>
+    <!-- Hood rim -->
+    <path d="M 260 410 C 250 260, 490 260, 480 410" fill="none" stroke="#1f1f26" stroke-width="24"/>
+    <!-- Headphones headband over hood -->
+    <path d="M 270 380 C 270 240, 470 240, 470 380" fill="none" stroke="#ffc72c" stroke-width="14" stroke-linecap="round"/>
+    <!-- Left ear cup -->
+    <rect x="250" y="340" width="36" height="66" rx="18" fill="#ffc72c" stroke="#141418" stroke-width="4"/>
+    <!-- Right ear cup -->
+    <rect x="454" y="340" width="36" height="66" rx="18" fill="#ffc72c" stroke="#141418" stroke-width="4"/>
+  </g>
+
+  <!-- Ambient light -->
+  <circle cx="370" cy="360" r="160" fill="#ffffff" opacity="0.03"/>
+
+  <!-- Placeholder label -->
+  <rect x="30" y="30" width="160" height="26" rx="6" fill="rgba(0,0,0,0.6)" stroke="#383842"/>
+  <text x="110" y="47" fill="#a1a1aa" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="600" text-anchor="middle">about-person.jpg</text>
+</svg>
