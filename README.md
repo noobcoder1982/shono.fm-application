@@ -10,13 +10,13 @@
 
   <p>
     <a href="https://github.com/noobcoder1982/shono.fm/releases/tag/v1.0.2"><img src="https://img.shields.io/badge/Release-v1.0.2-ffc72c?style=for-the-badge&logo=github&logoColor=black" alt="Release v1.0.2"></a>
-    <a href="https://github.com/noobcoder1982/shono.fm/releases/download/v1.0.2/shono.fm.Setup.1.0.1.exe"><img src="https://img.shields.io/badge/Platform-Windows%20x64-0078d4?style=for-the-badge&logo=windows&logoColor=white" alt="Windows 64-bit"></a>
+    <a href="https://github.com/noobcoder1982/shono.fm/releases/download/v1.0.2/shono.fm.Setup.1.0.2.exe"><img src="https://img.shields.io/badge/Platform-Windows%20x64-0078d4?style=for-the-badge&logo=windows&logoColor=white" alt="Windows 64-bit"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-00ff87?style=for-the-badge" alt="MIT License"></a>
     <a href="#features"><img src="https://img.shields.io/badge/Ads-0%25%20(Pure%20Audio)-ff3b30?style=for-the-badge" alt="Zero Ads"></a>
   </p>
 
   <p>
-    <a href="https://github.com/noobcoder1982/shono.fm/releases/download/v1.0.2/shono.fm.Setup.1.0.1.exe">
+    <a href="https://github.com/noobcoder1982/shono.fm/releases/download/v1.0.2/shono.fm.Setup.1.0.2.exe">
       <img src="https://img.shields.io/badge/DOWNLOAD%20FOR%20WINDOWS-80MB%20.EXE-ffc72c?style=for-the-badge&logo=windows&logoColor=black" height="42" alt="Download for Windows">
     </a>
   </p>
@@ -76,10 +76,10 @@ Most desktop streaming tools are bloated browser wrappers burdened with mandator
 
 1. **Download the installer**:
    Grab the latest executable installer:
-   👉 **[Download shono.fm.Setup.1.0.1.exe](https://github.com/noobcoder1982/shono.fm/releases/download/v1.0.2/shono.fm.Setup.1.0.1.exe)**
+   👉 **[Download shono.fm.Setup.1.0.2.exe](https://github.com/noobcoder1982/shono.fm/releases/download/v1.0.2/shono.fm.Setup.1.0.2.exe)**
 
 2. **Run the setup**:
-   Double-click `shono.fm.Setup.1.0.1.exe`.  
+   Double-click `shono.fm.Setup.1.0.2.exe`.  
    *(Note: If Windows SmartScreen appears due to open-source self-signing, click **"More info"** &rarr; **"Run anyway"**).*
 
 3. **Enjoy your music**:
