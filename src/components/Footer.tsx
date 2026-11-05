@@ -35,7 +35,7 @@ export function Footer() {
 
           <nav aria-label="Site" className="p-4 md:col-span-2 md:p-6">
             <div className="label mb-3 text-orange">Index</div>
-            {[['Features', '#features'], ['Interface', '#interface'], ['Themes', '#themes'], ['Specifications', '#specs'], ['Downloads', '#download']].map(([l, h]) => (
+            {[['Features', '#features'], ['Themes', '#themes'], ['Specifications', '#specs'], ['Downloads', '#download']].map(([l, h]) => (
               <a key={h} className={link} href={h}>{l}</a>
             ))}
           </nav>

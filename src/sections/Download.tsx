@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Apple, ArrowDownToLine, Check, Copy, ExternalLink, Terminal } from 'lucide-react'
 import { MAC, RELEASE, VERSION, WINDOWS, XATTR, type MacArch } from '@/data/site'
 import { WindowsIcon } from '@/components/ui/Icons'
+import { BlurReveal, BlurText } from '@/components/ui/BlurReveal'
 
 async function copyText(text: string) {
   try {
@@ -83,15 +84,15 @@ export function Download() {
     <section id="download" data-nav="download" className="border-b-2 border-ink bg-orange">
       <div className="mx-auto max-w-[1700px]">
         <div className="flex items-end justify-between gap-6 border-b-2 border-ink p-4 md:p-6">
-          <h2 className="display text-[clamp(4rem,17vw,17rem)] !leading-[0.78]">Download</h2>
+          <BlurText as="h2" text="Download" className="display text-[clamp(4rem,17vw,17rem)] !leading-[0.78]" />
           <div className="label hidden pb-2 text-right md:block">
-            <span className="bg-ink px-1.5 py-0.5 text-paper">10</span>
+            <span className="bg-ink px-1.5 py-0.5 text-paper">07</span>
             <div className="mt-2">v{VERSION}<br />Free · Open source</div>
           </div>
         </div>
-        <p className="max-w-[60ch] border-b-2 border-ink p-4 text-lg leading-snug md:p-6 md:text-xl">
+        <BlurReveal as="p" delay={0.1} y={16} blur={10} className="max-w-[60ch] border-b-2 border-ink p-4 text-lg leading-snug md:p-6 md:text-xl">
           SHONO.FM {VERSION} for Windows and macOS. Downloads come straight from the GitHub release.
-        </p>
+        </BlurReveal>
 
         <div className="grid lg:grid-cols-2">
           {/* Windows */}

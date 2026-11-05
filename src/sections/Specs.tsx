@@ -14,7 +14,7 @@ const ROWS: { k: string; v: string; href?: string }[] = [
 /** Specifications — only facts verified against the repository and release page. */
 export function Specs() {
   return (
-    <Section id="specs" nav="specs" n="09" title="Specifications" titleSize="text-[clamp(1.9rem,2.8vw,3rem)]">
+    <Section id="specs" nav="specs" n="06" title="Specifications" titleSize="text-[clamp(1.9rem,2.8vw,3rem)]">
       <dl>
         {ROWS.map((r) => (
           <div key={r.k} className="grid grid-cols-[7.5rem_1fr] items-baseline gap-4 border-b-2 border-ink p-4 md:grid-cols-[13rem_1fr] md:px-6 md:py-6">

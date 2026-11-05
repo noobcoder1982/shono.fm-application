@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import type { NavId } from '@/data/site'
+import { BlurReveal, BlurText } from './BlurReveal'
 
 interface Props {
   id?: string
@@ -16,10 +17,22 @@ interface Props {
 
 /**
  * Every section shares one skeleton: a numbered, sticky label column on the left and content on the right,
- * divided by a 2px rule. The repetition is the layout system.
+ * divided by a 2px rule. Uses GSAP ScrollTrigger blur text reveal on scroll.
  */
-export function Section({ id, nav, n, title, titleSize = 'text-[clamp(2.6rem,4.6vw,5rem)]', intro, aside, dark, children, className = '' }: Props) {
+export function Section({
+  id,
+  nav,
+  n,
+  title,
+  titleSize = 'text-[clamp(2.6rem,4.6vw,5rem)]',
+  intro,
+  aside,
+  dark,
+  children,
+  className = '',
+}: Props) {
   const rule = dark ? 'border-paper' : 'border-ink'
+
   return (
     <section id={id} data-nav={nav} className={`border-b-2 ${rule} ${dark ? 'bg-ink text-paper' : ''} ${className}`}>
       <div className="mx-auto grid max-w-[1700px] lg:grid-cols-12">
@@ -28,8 +41,12 @@ export function Section({ id, nav, n, title, titleSize = 'text-[clamp(2.6rem,4.6
             <div className="label flex items-center gap-2">
               <span className="inline-block bg-orange px-1.5 py-0.5 text-ink">{n}</span>
             </div>
-            <h2 className={`display mt-6 ${titleSize}`}>{title}</h2>
-            {intro && <div className="mt-6 max-w-[34ch] text-[17px] leading-snug">{intro}</div>}
+            <BlurText as="h2" text={title} className={`display mt-6 ${titleSize}`} />
+            {intro && (
+              <BlurReveal as="div" delay={0.1} y={16} blur={10} className="mt-6 max-w-[34ch] text-[17px] leading-snug">
+                {intro}
+              </BlurReveal>
+            )}
             {aside && <div className="mt-8">{aside}</div>}
           </div>
         </header>

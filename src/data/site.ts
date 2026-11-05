@@ -51,7 +51,6 @@ export const XATTR = 'xattr -cr /Applications/SHONO.app'
 export const NAV = [
   { id: 'home', label: 'Home' },
   { id: 'features', label: 'Features' },
-  { id: 'interface', label: 'Interface' },
   { id: 'themes', label: 'Themes' },
   { id: 'specs', label: 'Specifications' },
   { id: 'download', label: 'Downloads' },
