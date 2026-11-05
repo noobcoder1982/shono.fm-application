@@ -1,0 +1,119 @@
+@import 'tailwindcss';
+
+/* Self-hosted, Latin subset. Archivo is variable on weight (100–900) and width (62–125%). */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  src: url('/fonts/archivo-wdth.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('/fonts/jetbrains-mono-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url('/fonts/jetbrains-mono-latin-500-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url('/fonts/jetbrains-mono-latin-700-normal.woff2') format('woff2');
+}
+
+@theme {
+  --font-display: 'Archivo', 'Helvetica Neue', Helvetica, Arial, 'Noto Sans Devanagari', 'Noto Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --color-paper: #ecebe5;
+  --color-ink: #0a0a0a;
+  --color-mute: #6d6c66;
+  --color-orange: #ff5a00;
+  --color-chalk: #d9d8d0;
+}
+
+@layer base {
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    -webkit-text-size-adjust: 100%;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+  body {
+    font-family: var(--font-display);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
+  }
+  ::selection { background: var(--color-orange); color: var(--color-ink); }
+  :focus-visible {
+    outline: 3px solid var(--color-orange);
+    outline-offset: 2px;
+  }
+  button { cursor: pointer; }
+  img { display: block; }
+}
+
+@layer utilities {
+  .cond { font-stretch: 70%; }
+  .semi { font-stretch: 85%; word-spacing: 0.1em; }
+  .label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 1.35;
+  }
+  .display {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.045em;
+    line-height: 0.86;
+    word-spacing: 0.14em;
+    font-stretch: 72%;
+  }
+  .no-scrollbar { scrollbar-width: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  /* Hard offset shadow: the only "effect" in the system. */
+  .hard { box-shadow: 6px 6px 0 0 var(--color-ink); transition: transform 90ms linear, box-shadow 90ms linear; }
+  .hard:hover { transform: translate(3px, 3px); box-shadow: 3px 3px 0 0 var(--color-ink); }
+  .hard:active { transform: translate(6px, 6px); box-shadow: 0 0 0 0 var(--color-ink); }
+  .hard-light { box-shadow: 6px 6px 0 0 var(--color-paper); transition: transform 90ms linear, box-shadow 90ms linear; }
+  .hard-light:hover { transform: translate(3px, 3px); box-shadow: 3px 3px 0 0 var(--color-paper); }
+  .hard-light:active { transform: translate(6px, 6px); box-shadow: 0 0 0 0 var(--color-paper); }
+}
+
+/* Sample word-by-word fill used in the lyrics demo. Pure CSS, runs once per replay. */
+@keyframes fill { from { background-size: 0% 100%; } to { background-size: 100% 100%; } }
+.sync-word {
+  color: rgba(10, 10, 10, 0.22);
+  background: linear-gradient(var(--color-ink), var(--color-ink)) no-repeat 0 0 / 0% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: fill 0.45s linear forwards;
+}
+@media (prefers-reduced-motion: reduce) {
+  .sync-word { animation: none; background-size: 100% 100%; }
+}
+
+/* Equalizer glyph for the active row */
+@keyframes eq { 0%, 100% { transform: scaleY(0.3); } 50% { transform: scaleY(1); } }
+.eq-bar { transform-origin: bottom; animation: eq 0.9s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .eq-bar { animation: none; transform: scaleY(0.6); } }
+
+input[type='range'] { appearance: none; height: 4px; background: var(--color-ink); border-radius: 0; }
+input[type='range']::-webkit-slider-thumb { appearance: none; width: 18px; height: 18px; border-radius: 0; background: var(--color-orange); border: 2px solid var(--color-ink); }
+input[type='range']::-moz-range-thumb { width: 14px; height: 14px; border-radius: 0; background: var(--color-orange); border: 2px solid var(--color-ink); }

@@ -1,0 +1,14 @@
+{
+  "title": "SHONO.FM 2.0.0 \u2014 Precision Audio Archive & Desktop Music Player",
+  "description": "SHONO.FM is an open-source desktop music player for Windows and macOS. Explore album artwork in 3D, synchronized lyrics, themes and audio visualizations. Download v2.0.0.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  },
+  "icons": {
+    "icon": "/shono-logo.png"
+  }
+}
