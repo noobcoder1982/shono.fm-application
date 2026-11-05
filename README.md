@@ -73,3 +73,4 @@ Looking for the desktop application? Visit the [SHONO.FM Releases](https://githu
 ## 📄 License
 
 This project is open-source under the [MIT License](LICENSE).
+
